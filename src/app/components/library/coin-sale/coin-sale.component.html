@@ -7,7 +7,7 @@
         <div class="input-wrapper">
             <div class="input-left">
                 <span>From</span>
-                <input placeholder="0.0">
+                <input placeholder="0.0" type='number' [(ngModel)]="fromVal" (ngModelChange)="fromChange($event);">
             </div>
             <div class="input-right">
                 <span>Balance: 0.555214</span>
@@ -20,7 +20,7 @@
         <div class="input-wrapper">
             <div class="input-left">
                 <span>To</span>
-                <input placeholder="0.0">
+                <input placeholder="0.0" type='number' [(ngModel)]="toVal" (ngModelChange)="toChange($event);">
             </div>
             <div class="input-right">
                 <span>Balance: 0</span>
