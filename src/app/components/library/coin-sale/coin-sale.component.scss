@@ -1,0 +1,93 @@
+.content-wrapper {
+    background-color: rgb(170, 167, 163);
+    border: 1px solid rgb(163, 160, 158);
+    border-radius: 24px;
+
+    .content-title {
+        padding: 25px;
+        border-bottom: 1px solid #CCC;
+        h2 {
+            margin: 0;
+        }
+
+        span {
+            font-size: 85%;
+        }
+    }
+
+    .content-body {
+        padding: 0px 25px 12px 25px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .input-wrapper{
+            background-color: rgb(238, 233, 230);
+            padding: 12px;
+            border-radius: 14px;
+            margin: 12px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: calc(100% - 24px);
+            height: 3rem;
+
+            .input-right,.input-left{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+            .input-right{
+                .coin-name {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: right;
+                    align-items: center;
+                }
+                span {
+                    text-align: right;
+                    margin-left: 5px;
+                }
+            }
+
+    
+            input {
+                border: none;
+                background-color: transparent;
+            }
+    
+            input:focus{
+                outline: none;
+            }
+        }
+    
+        .bottom-button {
+            padding: 12px 25px;
+            border-radius: 14px;
+            border: none;
+            width: 100%;
+            background-color: rgb(238, 233, 230);
+            margin: 0px auto;
+            font-weight: 700;
+            font-size: 110%;
+            -webkit-transition: all 0.2s 0s ease-in;
+            -moz-transition: all 0.2s 0s ease-in;
+            -o-transition: all 0.2s 0s ease-in;
+            transition: all 0.2s 0s ease-in;
+            cursor: pointer;
+        }
+
+        .bottom-button:hover {
+            background-color: #CCC;
+            -webkit-transition: all 0.2s 0s ease-in;
+            -moz-transition: all 0.2s 0s ease-in;
+            -o-transition: all 0.2s 0s ease-in;
+            transition: all 0.2s 0s ease-in;
+        }
+    }
+
+    
+}
+
+
