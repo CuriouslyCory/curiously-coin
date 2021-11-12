@@ -10,7 +10,7 @@
                 <input placeholder="0.0" type='number' [(ngModel)]="fromVal" (ngModelChange)="fromChange($event);">
             </div>
             <div class="input-right">
-                <span>Balance: 0.555214</span>
+                <span>Balance: {{ethBalance | number: '0.0-5'}}</span>
                 <div class="coin-name">
                     <img class="coin-logo" src="assets/binance-coin-bnb-logo.svg" height="25" width="25">
                     <span>BNB</span>

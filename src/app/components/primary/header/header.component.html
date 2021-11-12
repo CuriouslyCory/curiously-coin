@@ -2,5 +2,7 @@
     <img class="coin-logo" src="assets/CoinLogo.svg" height="40" width="40">
     <span>CuriouslyCoin</span>
     <span class="header-spacer"></span>
-    <mat-icon class="header-icon">verified_user</mat-icon>
+    <span>{{network}}</span>
+    <span *ngIf="walletConnected" (mouseenter)="mouseOver = true;" (mouseleave)="mouseOver=false" (click)="disconnectWallet();" class="connection-status">{{mouseOver ? 'Disconnect' : 'Connected'}}</span>
+    <mat-icon class="header-icon" (click)="connectWallet()">account_balance_wallet</mat-icon>
 </mat-toolbar>
