@@ -23,14 +23,14 @@
                 <input placeholder="0.0" type='number' [(ngModel)]="toVal" (ngModelChange)="toChange($event);">
             </div>
             <div class="input-right">
-                <span>Balance: 0</span>
+                <span>Balance: {{tokenBalance}}</span>
                 <div class="coin-name">
                     <img class="coin-logo" src="assets/CoinLogo.svg" height="25" width="25">
                     <span>CCN</span>
                 </div>
             </div>
         </div>
-        <button class="bottom-button">Swap</button>
+        <button class="bottom-button">Buy</button>
     </div>
     
 </div>

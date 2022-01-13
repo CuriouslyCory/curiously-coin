@@ -1,11 +1,12 @@
 .content-wrapper {
-    background-color: rgb(170, 167, 163);
+    background-color: #005780;
     border: 1px solid rgb(163, 160, 158);
     border-radius: 24px;
 
     .content-title {
         padding: 25px;
         border-bottom: 1px solid #CCC;
+        color: #ffffff;
         h2 {
             margin: 0;
         }
@@ -22,7 +23,7 @@
         flex-direction: column;
 
         .input-wrapper{
-            background-color: rgb(238, 233, 230);
+            background-color: #b3cdd9;
             padding: 12px;
             border-radius: 14px;
             margin: 12px auto;
@@ -67,7 +68,7 @@
             border-radius: 14px;
             border: none;
             width: 100%;
-            background-color: rgb(238, 233, 230);
+            background-color: #b3cdd9;
             margin: 0px auto;
             font-weight: 700;
             font-size: 110%;

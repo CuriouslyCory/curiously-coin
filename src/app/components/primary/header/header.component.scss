@@ -1,6 +1,6 @@
-.header-icon {
-    padding: 0 14px;
-}
+$dark-text: #000000;
+$dark-primary-text: rgba($dark-text, 0.87);
+
 .header-spacer {
     flex: 1 1 auto;
 }
@@ -11,4 +11,32 @@
 
 .connection-status {
     margin-left: 5px;
+    cursor: pointer;
+}
+
+
+.circle-icon {
+    border: 2px solid $dark-primary-text;
+    border-radius: 24px;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+
+    mat-icon {
+        margin: 1.5px;
+        padding: 1.5px;
+    }
+    -webkit-transition: all 0.2s 0s ease-in;
+    -moz-transition: all 0.2s 0s ease-in;
+    -o-transition: all 0.2s 0s ease-in;
+    transition: all 0.2s 0s ease-in;
+}
+
+.circle-icon:hover {
+    background-color: rgba(0,0,0, 0.1);
+    -webkit-transition: all 0.2s 0s ease-in;
+    -moz-transition: all 0.2s 0s ease-in;
+    -o-transition: all 0.2s 0s ease-in;
+    transition: all 0.2s 0s ease-in;
 }

@@ -19,8 +19,7 @@ export class HeaderComponent implements OnInit {
     wallet.isValidNetwork.subscribe((isValidNetwork: boolean) => this.updateNetworkStatus(isValidNetwork));
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   connectWallet(): void {
     this.wallet.connect();
